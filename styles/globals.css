@@ -1,0 +1,253 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.overlay {
+	animation: fadeIN linear 0.2s;
+}
+
+.left-side-bar {
+	will-change: transform, opacity;
+	transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.left-side-bar--not-in {
+	transform: translateX(-100%);
+	opacity: 0;
+}
+
+.left-side-bar--in {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+@keyframes fadeIN {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+	.hero {
+		@apply text-[6rem] font-[800];
+	}
+	.headline-1 {
+		@apply text-[4rem] font-semibold;
+	}
+	.headline-2 {
+		@apply text-[3rem] font-semibold;
+	}
+	.headline-3 {
+		@apply text-[2.5rem] font-semibold;
+	}
+	.headline-4 {
+		@apply text-[2rem] font-semibold;
+	}
+	.headline-5 {
+		@apply text-lg font-semibold;
+	}
+	.body-1 {
+		@apply text-2xl;
+	}
+	.body-1-medium {
+		@apply text-2xl font-medium;
+	}
+	.body-1-semibold {
+		@apply text-2xl font-semibold;
+	}
+	.body-2 {
+		@apply text-xl;
+	}
+	.body-2-medium {
+		@apply text-xl font-medium;
+	}
+	.body-2-semibold {
+		@apply text-xl font-semibold;
+	}
+	.body-2-bold {
+		@apply text-xl font-bold;
+	}
+	.body-3 {
+		@apply text-lg;
+	}
+	.body-3-medium {
+		@apply text-lg font-medium;
+	}
+	.body-3-semibold {
+		@apply text-lg font-semibold;
+	}
+	.body-3-bold {
+		@apply text-lg font-bold;
+	}
+	.body-4 {
+		@apply text-base;
+	}
+	.body-4-medium {
+		@apply text-base font-medium;
+	}
+	.body-4-semibold {
+		@apply text-base font-semibold;
+	}
+	.body-4-bold {
+		@apply text-base font-bold;
+	}
+	.body-5 {
+		@apply text-sm;
+	}
+	.body-5-medium {
+		@apply text-sm font-medium;
+	}
+	.body-5-semibold {
+		@apply text-sm font-semibold;
+	}
+	.body-5-bold {
+		@apply text-sm font-bold;
+	}
+}
+
+@layer components {
+	.btn svg {
+		display: inline-block;
+	}
+	.btn-sm {
+		@apply text-sm px-[21px] py-[10px] font-semibold text-center;
+	}
+	.btn-md {
+		@apply text-base px-[28.5px] py-[12px] font-semibold text-center;
+	}
+	.btn-lg {
+		@apply text-lg px-[27px] py-[14px] font-semibold text-center;
+	}
+	.btn-plain {
+		@apply bg-white text-brand-primary;
+	}
+	.btn-primary {
+		@apply bg-brand-primary text-white;
+	}
+	.btn-secondary {
+		@apply border border-brand-secondary bg-white text-brand-primary;
+	}
+	.slider-wrapper {
+		width: calc(100% + 1.5rem);
+		margin-left: -0.75rem;
+		padding: 0 0.75rem 0.75rem 0.75rem;
+		overflow: hidden;
+	}
+	.custom-slider .slick-list {
+		overflow: visible;
+		margin: 0 -0.75rem;
+	}
+	.custom-slider .slick-slide {
+		padding: 0 0.75rem;
+	}
+	.custom-slider .slick-slide:not(.slick-active) .shadow-md {
+		box-shadow: none;
+		transition: box-shadow 0.1s ease-in-out;
+	}
+	/* .custom-slider .slick-active:not(last-child) > div {
+		margin: 0 0.75rem 0;
+	} */
+	.custom-slider .slick-track {
+		margin: 0;
+	}
+	.custom-slick-dots {
+		position: absolute;
+		bottom: -80px;
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+	}
+	.custom-slick-dots li {
+		position: relative;
+		display: inline-block;
+		width: 72px;
+		height: 72px;
+		margin: 0 5px;
+		padding: 0;
+		cursor: pointer;
+	}
+	label {
+		@apply text-base font-semibold text-neutral-80;
+	}
+}
+@layer utilities {
+	.bg-auth {
+		background-image: url("../public/auth-bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.home-banner {
+		height: calc(100vh - 60px);
+		margin-top: -1.25rem;
+		background: url("../public/images/banner.avif") top center / cover
+			no-repeat;
+	}
+	.user-layout {
+		min-height: calc(100vh - 80px);
+		margin-top: -1.25rem;
+	}
+	.table-striped tr:nth-child(even) {
+		background-color: #fafafa;
+	}
+	input[type="text"] {
+		box-shadow: none !important;
+	}
+	input[type="number"] {
+		box-shadow: none !important;
+	}
+	input[type="password"] {
+		box-shadow: none !important;
+	}
+	input[type="email"] {
+		box-shadow: none !important;
+	}
+	select {
+		box-shadow: none !important;
+		border: none !important;
+	}
+	input[type="date"] {
+		box-shadow: none !important;
+	}
+	textarea {
+		box-shadow: none !important;
+	}
+	input[type="time"] {
+		box-shadow: none !important;
+	}
+	input[type="datetime-local"] {
+		box-shadow: none !important;
+	}
+	input[type="tel"] {
+		box-shadow: none !important;
+	}
+	input[type="checkbox"] {
+		box-shadow: none !important;
+	}
+}
