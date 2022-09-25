@@ -154,24 +154,6 @@ export default function SearchTab({
 									className={`border-x-white border-t-white`}
 								/>
 							</div>
-							<div className="py-3 grow relative pl-[56px] pr-[16px]">
-								<HiOutlineLocationMarker className="absolute top-[50%] left-[16px] text-[24px] -translate-y-[50%]" />
-								<FormSelect
-									name="address"
-									defaultValue={province}
-									options={[
-										{
-											value: "",
-											label: "Chọn địa điểm",
-										},
-										...provinces.map((item) => ({
-											label: item.name,
-											value: item.code,
-										})),
-									]}
-									className={`border-x-white border-t-white`}
-								/>
-							</div>
 							<Button md primary className="grow md:grow-0">
 								Tìm kiếm
 							</Button>
@@ -179,34 +161,6 @@ export default function SearchTab({
 					</Form>
 				</Formik>
 			</Tab.Group>
-			{/*<div className="flex items-center hidden md:flex">
-				<span className="ml-0 lg:ml-8 text-sm text-neutral-100 font-medium">
-					Tìm kiếm phổ biến
-				</span>
-				<div className="ml-4 lg:ml-12 flex-wrap d-flex items-center text-[14px]">
-					<span className="text-neutral-60 mx-[16px]">
-						<u>Từ khóa 1</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 2</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 3</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 4</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 4</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 4</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 4</u>
-					</span>
-				</div>
-			</div>*/}
 		</div>
 	);
 }
