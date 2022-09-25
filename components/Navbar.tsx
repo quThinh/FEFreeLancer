@@ -9,9 +9,7 @@ import { useEffect, useState } from "react";
 import NotificationDropdown from "./NotificationDropdown";
 import AuthUtils from "@/utils/authUtils";
 
-interface INavbarProp {}
-
-function Navbar(props: INavbarProp) {
+function Navbar() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 	useEffect(() => {
 		setIsLoggedIn(AuthUtils.isLoggedIn());
@@ -33,9 +31,6 @@ function Navbar(props: INavbarProp) {
 					</div>
 					<div className="text-base font-normal">
 						<Link href="/about">Về Niubi</Link>
-					</div>
-					<div className="text-base font-normal">
-						<Link href="/news">Tin tức</Link>
 					</div>
 				</div>
 				{!isLoggedIn ? (

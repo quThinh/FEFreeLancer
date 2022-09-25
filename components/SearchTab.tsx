@@ -1,5 +1,4 @@
 import categoryApi from "@/api/categoryApi";
-import geoApi from "@/api/geoApi";
 import { Tab } from "@headlessui/react";
 import { Form, Formik } from "formik";
 import { useRouter } from "next/router";
@@ -9,7 +8,6 @@ import {
 	HiOutlineBriefcase,
 	HiOutlineClipboardList,
 	HiOutlineInformationCircle,
-	HiOutlineLocationMarker,
 	HiOutlineUser,
 	HiSearch,
 } from "react-icons/hi";
@@ -21,13 +19,11 @@ interface SearchTabProps {
 	tab?: number;
 	category?: string;
 	keyword?: string;
-	province?: string;
 }
 
 export default function SearchTab({
 	category = "",
 	keyword = "",
-	province = "",
 }: SearchTabProps) {
 	const router = useRouter();
 	const [selectedTab, setSelectedTab] = useState(0);
@@ -49,7 +45,6 @@ export default function SearchTab({
 	];
 
 	const { data: categories = [] } = categoryApi.useCategory();
-	const { provinces = [] } = geoApi.useProvinces();
 	return (
 		<div className="py-8">
 			<p className="mb-8 sm:text-3xl sm:text-left text-2xl text-center font-bold text-neutral-100">
@@ -90,7 +85,6 @@ export default function SearchTab({
 				<Formik
 					initialValues={{
 						keyword: keyword,
-						address: province,
 						category: category,
 					}}
 					enableReinitialize
@@ -98,7 +92,6 @@ export default function SearchTab({
 						const _query = queryString.stringify(
 							{
 								name: values.keyword.trim(),
-								address: values.address,
 								category: values.category,
 							},
 							{ skipEmptyString: true }
@@ -154,24 +147,6 @@ export default function SearchTab({
 									className={`border-x-white border-t-white`}
 								/>
 							</div>
-							<div className="py-3 grow relative pl-[56px] pr-[16px]">
-								<HiOutlineLocationMarker className="absolute top-[50%] left-[16px] text-[24px] -translate-y-[50%]" />
-								<FormSelect
-									name="address"
-									defaultValue={province}
-									options={[
-										{
-											value: "",
-											label: "Chọn địa điểm",
-										},
-										...provinces.map((item) => ({
-											label: item.name,
-											value: item.code,
-										})),
-									]}
-									className={`border-x-white border-t-white`}
-								/>
-							</div>
 							<Button md primary className="grow md:grow-0">
 								Tìm kiếm
 							</Button>
@@ -179,34 +154,6 @@ export default function SearchTab({
 					</Form>
 				</Formik>
 			</Tab.Group>
-			{/*<div className="flex items-center hidden md:flex">
-				<span className="ml-0 lg:ml-8 text-sm text-neutral-100 font-medium">
-					Tìm kiếm phổ biến
-				</span>
-				<div className="ml-4 lg:ml-12 flex-wrap d-flex items-center text-[14px]">
-					<span className="text-neutral-60 mx-[16px]">
-						<u>Từ khóa 1</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 2</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 3</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 4</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 4</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 4</u>
-					</span>
-					<span className="text-neutral-60 mx-[8px]">
-						<u>Từ khóa 4</u>
-					</span>
-				</div>
-			</div>*/}
 		</div>
 	);
 }

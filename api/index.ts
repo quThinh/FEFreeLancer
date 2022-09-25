@@ -29,7 +29,7 @@ apiClient.interceptors.response.use(
 						originalRequest.headers.Authorization = `Bearer ${res.accessToken}`;
 						return axios(originalRequest);
 					})
-					.catch((err) => {
+					.catch(() => {
 						authApi.logout();
 					});
 			}

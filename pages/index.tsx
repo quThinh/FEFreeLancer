@@ -7,10 +7,9 @@ import TNews from "interfaces/ENews";
 import TService from "interfaces/EService";
 import Head from "next/head";
 import Banner from "components/Banner";
-import Blog from "components/Blog";
 import CategoryList from "components/CategoryList";
 import SearchTab from "components/SearchTab";
-import ServiceList from "components/ServiceList";
+import ServiceList from "components/ServiceList"
 import HorizontalLayout from "layouts/HorizontalLayout";
 
 export async function getStaticProps() {
@@ -164,7 +163,6 @@ export default function Home({
 						}`}
 						services={serviceList4}
 					/>
-					<Blog news={news} />
 					<Testimonial />
 				</div>
 			</main>
