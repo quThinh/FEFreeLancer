@@ -8,7 +8,7 @@ export default function Testimonial() {
 				<div>
 					<VscQuote className="lg:w-32 lg:h-64 w-16 h-32 text-white outline stroke-1 stroke-black" />
 					<div className="font-bold lg:text-[52px] text-[36px]">
-						Niubi - Nền tảng kết nối trí tuệ
+						Nền tảng kết nối việc làm 
 					</div>
 				</div>
 			</div>
@@ -29,9 +29,9 @@ export default function Testimonial() {
 						objectFit="contain"
 					/>
 					<div>
-						<div className="font-semibold text-brand-primary text-[20px]">Phuc Nguyen Thanh</div>
+						<div className="font-semibold text-brand-primary text-[20px]">Trương Quang Thịnh</div>
 						<div className="text-[15px] text-neutral-80">
-							Design a2ztech
+							Design
 						</div>
 					</div>
 				</div>

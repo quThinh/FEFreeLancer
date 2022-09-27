@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/logo/logo32.svg";
 import CategoryBoardDropdown from "./CategoryBoardDropdown";
 import CreateNewDropdown from "./CreateNewDropdown";
 import DropdownAccount from "./DropdownAccount";
@@ -17,8 +15,8 @@ function Navbar() {
 	return (
 		<div className="container md:max-w-full px-6 h-20 shadow-sm mb-5 bg-white flex items-center z-10 relative">
 			<Link href="/">
-				<a className="flex items-center">
-					<Image alt="logo" src={logo} width={100} height={32} />
+				<a className="flex items-center headline-4">
+				Freelancer
 				</a>
 			</Link>
 			<div className="ml-16 hidden xl:block">
@@ -30,7 +28,7 @@ function Navbar() {
 						<CategoryBoardDropdown position="center" />
 					</div>
 					<div className="text-base font-normal">
-						<Link href="/about">Về Niubi</Link>
+						<Link href="/about">Về Freelancer</Link>
 					</div>
 				</div>
 				{!isLoggedIn ? (

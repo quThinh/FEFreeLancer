@@ -14,10 +14,10 @@ const nextConfig = {
 	publicRuntimeConfig: {
 		apiUrl:
 			process.env.NODE_ENV === "development"
-				? "https://openjob.space/api"
+				? "http://localhost:5000"
 				: process.env.NODE_ENV === "test"
-				? "https://openjob.space/api"
-				: "https://openjob.space/api",
+				? "http://localhost:5000"
+				: "https://localhost:5000",
 	},
 };
 module.exports = nextConfig;

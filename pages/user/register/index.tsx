@@ -52,22 +52,15 @@ export default function Register() {
 			<main className="bg-white pt-6">
 				<div className="w-[9.375rem] ml-6">
 					<Link href="/">
-						<a>
-							<Image
-								src="/logo/logo48.svg"
-								alt="niubi.vn"
-								layout="responsive"
-								width="100%"
-								height="48px"
-								objectFit="contain"
-							/>
+						<a className="headline-4">
+						Freelancer
 						</a>
 					</Link>
 				</div>
 				<div className="p-6">
 					<div>
 						<p className="text-[32px] font-bold text-neutral-100">
-							Chào mừng bạn đến với Niubi
+							Chào mừng bạn đến với Freelancer 
 						</p>
 						<p className="text-sm mt-2 text-neutral-60 font-normal">
 							Vui lòng đăng kí theo mẫu dưới đây để sử dụng dịch

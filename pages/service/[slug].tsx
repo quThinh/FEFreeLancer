@@ -74,7 +74,7 @@ export default function DetailService(/*{ service }: { service: TService }*/) {
 	return (
 		<>
 			<Head>
-				<title>{} - Niubi</title>
+				<title>{service?.slug} - Freelancer</title>
 			</Head>
 			<Breadcrumb
 				location={[
@@ -83,7 +83,7 @@ export default function DetailService(/*{ service }: { service: TService }*/) {
 						path: "/services",
 					},
 					{
-						name: "service.name",
+						name: service?.name || "",
 						active: true,
 					},
 				]}

@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import Image from "next/image";
 import { ReactElement } from "react";
 import HorizontalLayout from "../layouts/HorizontalLayout";
@@ -11,12 +10,12 @@ export default function About() {
 	return (
 		<div className="container py-8 h-full">
 			<Head>
-				<title>Về Niubi</title>
+				<title>Về Freelancer</title>
 			</Head>
 			<div className="flex lg:h-[40rem] sm:h-[36rem] justify-between sm:flex-row flex-col">
 				<div className="lg:w-1/3 sm:w-1/2 w-full flex items-start justify-center flex-col gap-4 lg:ml-8 xl:ml-[unset] sm:ml-2 translate-y-[-48px]">
 					<div className="sm:text-[3rem] font-bold text-[2.4rem] mt-8 sm:mt-[unset]">
-						Niubi - Nền tảng kết nối trí tuệ
+						Nền tảng kết nối việc làm 
 					</div>
 					<div className="font-normal sm:text-xl text-lg">
 						Một nền tảng phi tập trung cho sự thay đổi, tìm kiếm các

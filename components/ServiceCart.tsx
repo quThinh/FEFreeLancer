@@ -82,7 +82,7 @@ export default function ServiceCart(props: { service?: TService }) {
 							</Button>
 						</div>
 						<div className="text-center text-sm font-semibold text-neutral-100 px-3 mt-2">
-							NIUBI HOÀN 100 TIỀN NẾU KHÔNG HÀI LÒNG VỚI DỊCH VỤ
+							FREELANCER HOÀN 100 TIỀN NẾU KHÔNG HÀI LÒNG VỚI DỊCH VỤ
 							SAU 24H
 						</div>
 					</div>

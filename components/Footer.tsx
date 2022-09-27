@@ -145,12 +145,6 @@ export default function Footer() {
 								<p className="font-bold text-white">
 									Quét mã QR
 								</p>
-								<Image
-									src="/icons/qr-code.svg"
-									alt="QR code"
-									width={128}
-									height={128}
-								/>
 							</div>
 						</div>
 					</div>
@@ -158,7 +152,7 @@ export default function Footer() {
 				<hr className="border-neutral-80" />
 				<div className="flex items-center mt-2 py-4">
 					<span className="text-xs text-neutral-40">
-						© Copyright NIUBI 2022
+						© Copyright Freelancer 2022
 					</span>
 					<span className="ml-auto gap-4 flex">
 						<Image

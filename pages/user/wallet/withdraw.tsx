@@ -30,7 +30,7 @@ export default function WithDraw() {
 						Lưu ý về thời gian rút tiền
 					</div>
 					<div className="body-4-medium text-neutral-60">
-						Niubi xử lý các lệnh rút tiền vào từ 8:00 đến 17:00 ngày
+						Freelancer xử lý các lệnh rút tiền vào từ 8:00 đến 17:00 ngày
 						thứ 3 và thứ 4 hàng tuần
 					</div>
 				</div>

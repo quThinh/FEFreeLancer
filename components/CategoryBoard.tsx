@@ -9,7 +9,7 @@ function CategoryBoard() {
 			<div className="flex bg-white">
 				<div className="flex-50 max-w-[50%]">
 					<div className="text-left font-[500] text-neutral-80 px-[16px] py-[13px] border-b">
-						Dịch vụ NiuBi cung cấp cho bạn
+						Dịch vụ Freelancer cung cấp cho bạn
 					</div>
 					<div className="p-[16px]">
 						<div className="flex p-[8px]">

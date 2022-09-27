@@ -177,7 +177,7 @@ export default function Deposit() {
 				<meta name="robots" content="noindex" />
 			</Head>
 			<div className="body-1-semibold sm:px-8 py-4 border-b text-neutral-100">
-				Nạp xu Niubi
+				Nạp xu Freelancer 
 			</div>
 			<div>
 				<div>
@@ -253,7 +253,7 @@ export default function Deposit() {
 							</p>
 							<div className="my-16">
 								<span className="px-6 py-3 rounded-full bg-brand-primary text-white body-3-medium">
-									NIUBI012345679
+									FLC012345679
 								</span>
 							</div>
 							<div className="xl:px-14 text-sm">
@@ -488,7 +488,7 @@ export default function Deposit() {
 											</span>{" "}
 											và{" "}
 											<span className="text-brand-primary font-semibold">
-												Chính sách bảo mật của NiuBi
+												Chính sách bảo mật của Freelancer 
 											</span>
 										</div>
 									</div>

@@ -34,15 +34,8 @@ export default function Login() {
 					<div>
 						<div className="w-[9.375rem]">
 							<Link href="/">
-								<a>
-									<Image
-										src="/logo/logo48.svg"
-										alt="niubi.vn"
-										layout="responsive"
-										width="100%"
-										height="48px"
-										objectFit="contain"
-									/>
+								<a className="headline-4">
+								Freelancer
 								</a>
 							</Link>
 						</div>
@@ -57,7 +50,7 @@ export default function Login() {
 							</div>
 							<div>
 								<p className="text-[32px] font-bold text-neutral-100">
-									Chào mừng bạn đến với Niubi
+									Chào mừng bạn đến với Freelancer 
 								</p>
 								<p className="text-sm mt-2 text-neutral-60 font-normal">
 									Vui lòng đăng nhập để sử dụng dịch vụ

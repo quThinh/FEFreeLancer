@@ -29,7 +29,7 @@ export default function Verify() {
 
 					<div className="p-6">
 						<p className="font-semibold text-neutral-80">
-							Hoàn thành nhiệm vụ do Niubi cung cấp để được xác
+							Hoàn thành nhiệm vụ do Freelancer cung cấp để được xác
 							minh miễn phí
 						</p>
 					</div>
@@ -81,7 +81,7 @@ export default function Verify() {
 
 					<div className="p-6">
 						<p>
-							Hoàn thành nhiệm vụ do Niubi cung cấp để được xác
+							Hoàn thành nhiệm vụ do Freelancer cung cấp để được xác
 							minh miễn phí
 						</p>
 					</div>
@@ -211,7 +211,7 @@ export default function Verify() {
 													<Image src="/work.jpg" alt="media" width={"64px"} height={"64px"} />
 												</div>
 												
-												<div className="font-semibold text-neutral-80">Thiết kế 1 video cho Niubi và quảng bá video trên Youtube, Facebook</div>
+												<div className="font-semibold text-neutral-80">Thiết kế 1 video cho Freelancer và quảng bá video trên Youtube, Facebook</div>
 											</div>
 											<div className="border-2 border-grey font-semibold text-neutral-80 text-center">
 												<div>Tôi đã thực hiện nhiệm vụ</div>
@@ -235,7 +235,7 @@ export default function Verify() {
 													<Image src="/work.jpg" alt="media" width={"64px"} height={"64px"} />
 												</div>
 												
-												<div className="font-semibold text-neutral-80">Thiết kế 1 video cho Niubi và quảng bá video trên Youtube, Facebook</div>
+												<div className="font-semibold text-neutral-80">Thiết kế 1 video cho Freelancer và quảng bá video trên Youtube, Facebook</div>
 											</div>
 											<div className="border-2 border-grey font-semibold text-neutral-80 text-center">
 												<div>Tôi đã thực hiện nhiệm vụ</div>
@@ -259,7 +259,7 @@ export default function Verify() {
 													<Image src="/work.jpg" alt="media" width={"64px"} height={"64px"} />
 												</div>
 												
-												<div className="font-semibold text-neutral-80">Thiết kế 1 video cho Niubi và quảng bá video trên Youtube, Facebook</div>
+												<div className="font-semibold text-neutral-80">Thiết kế 1 video cho Freelancer và quảng bá video trên Youtube, Facebook</div>
 											</div>
 											<div className="border-2 border-grey font-semibold text-neutral-80 text-center">
 												<div>Tôi đã thực hiện nhiệm vụ</div>

@@ -27,7 +27,7 @@ export default function CategoryBoardDropdown(
 ) {
 	const data = {
 		service: {
-			title: "Dịch vụ Niubi cung cấp cho bạn",
+			title: "Dịch vụ cung cấp cho bạn",
 			items: [
 				{
 					title: "Tìm dịch vụ",
@@ -53,7 +53,7 @@ export default function CategoryBoardDropdown(
 						/>
 					),
 					description:
-						"Niubi - Nơi hội tụ các tiền bối chuyên nghiệp nhất",
+						"Nơi hội tụ các tiền bối chuyên nghiệp nhất",
 					href: "/seniors",
 				},
 				{

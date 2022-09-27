@@ -20,15 +20,8 @@ export default function ForgetPassword() {
 			<main className="bg-white pt-6">
 				<div className="w-[9.375rem] ml-6">
 					<Link href="/">
-						<a>
-							<Image
-								src="/logo/logo48.svg"
-								alt="niubi.vn"
-								layout="responsive"
-								width="100%"
-								height="48px"
-								objectFit="contain"
-							/>
+						<a className="headline-4">
+						Freelancer
 						</a>
 					</Link>
 				</div>

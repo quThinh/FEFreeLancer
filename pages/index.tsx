@@ -103,16 +103,8 @@ export default function Home({
 		<>
 			<Head>
 				<title>Trang chủ</title>
-				<meta name="Niubi - Home" content="Niubi - Home" />
-				<link rel="icon" href="/favicon32.svg" />
-				<link rel="canonical" href="https://niubi.vn" />
-				<meta name="description" content="Niubi - Home" />
-				<meta name="keywords" content="Niubi - Home" />
-				<meta name="robots" content="index, follow" />
-				<meta charSet="utf-8" />
-				<meta name="author" content="Niubi" />
-				<meta name="copyright" content="Niubi - Home" />
-				<meta name="revisit-after" content="1 days" />
+				<meta name="author" content="Truong Quang-Thinh" />
+				<meta name="copyright" content="freelancer" />
 				<meta name="language" content="vi" />
 				<meta
 					name="viewport"
